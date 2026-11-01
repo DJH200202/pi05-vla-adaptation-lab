@@ -1,0 +1,4 @@
+# Preserve the exact bytes of exported experiment evidence (including original CRLF).
+results/** -text -whitespace
+# Matplotlib's standard SVG path serialization contains insignificant end-of-line spaces.
+demo/assets/charts/*.svg -whitespace
