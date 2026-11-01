@@ -1,0 +1,74 @@
+{
+  "state": "completed",
+  "planned": 500,
+  "completed": 500,
+  "successes": 142,
+  "failures": 358,
+  "errors": 0,
+  "success_rate": 0.284,
+  "per_task": {
+    "0": {
+      "completed": 50,
+      "successes": 18,
+      "planned": 50,
+      "success_rate": 0.36
+    },
+    "1": {
+      "completed": 50,
+      "successes": 11,
+      "planned": 50,
+      "success_rate": 0.22
+    },
+    "2": {
+      "completed": 50,
+      "successes": 19,
+      "planned": 50,
+      "success_rate": 0.38
+    },
+    "3": {
+      "completed": 50,
+      "successes": 22,
+      "planned": 50,
+      "success_rate": 0.44
+    },
+    "4": {
+      "completed": 50,
+      "successes": 2,
+      "planned": 50,
+      "success_rate": 0.04
+    },
+    "5": {
+      "completed": 50,
+      "successes": 9,
+      "planned": 50,
+      "success_rate": 0.18
+    },
+    "6": {
+      "completed": 50,
+      "successes": 12,
+      "planned": 50,
+      "success_rate": 0.24
+    },
+    "7": {
+      "completed": 50,
+      "successes": 31,
+      "planned": 50,
+      "success_rate": 0.62
+    },
+    "8": {
+      "completed": 50,
+      "successes": 6,
+      "planned": 50,
+      "success_rate": 0.12
+    },
+    "9": {
+      "completed": 50,
+      "successes": 12,
+      "planned": 50,
+      "success_rate": 0.24
+    }
+  },
+  "updated": "2026-11-01T11:32:26.083777+08:00",
+  "episode_source": "benchmark",
+  "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+}

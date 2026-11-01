@@ -1,0 +1,5427 @@
+{
+  "state": "completed",
+  "protocol": {
+    "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "episodes_per_task": 50,
+    "seed": 7,
+    "max_steps": 220,
+    "settle_steps": 10,
+    "replan_steps": 5,
+    "denoise_steps": 10,
+    "horizon": 10,
+    "render_resolution": 256,
+    "policy_image_size": 224,
+    "resize": "256 render -> 180-degree rotation -> PIL bilinear 224",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "data_signature": "e3581a7d4464ef7508ccd754e269a58779fe018af81fe8a4956f9234ebb51779",
+    "normalization": "quantile",
+    "policy_noise": "NumPy SeedSequence([seed, task_id, initial_state_id]); independent per-episode stream"
+  },
+  "groups": [
+    {
+      "group": "Base",
+      "scope": "base",
+      "checkpoint": "checkpoints/base/openpi-assets/checkpoints/pi05_base",
+      "run_dir": "outputs/runs/pi05-train500-ae-20261031T233628/eval/Base",
+      "state": "completed",
+      "planned": 500,
+      "completed": 500,
+      "successes": 0,
+      "failures": 500,
+      "errors": 0,
+      "success_rate": 0.0,
+      "per_task": {
+        "0": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "1": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "2": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "3": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "4": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "5": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "6": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "7": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "8": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "9": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        }
+      },
+      "updated": "2026-11-01T12:52:34.169283+08:00",
+      "episode_source": "benchmark",
+      "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+    },
+    {
+      "group": "A",
+      "scope": "action_lora",
+      "checkpoint": "outputs/runs/pi05-train500-ae-20261031T233628/train/A/checkpoints/step_003000",
+      "run_dir": "outputs/runs/pi05-train500-ae-20261031T233628/eval/A",
+      "state": "completed",
+      "planned": 500,
+      "completed": 500,
+      "successes": 15,
+      "failures": 485,
+      "errors": 0,
+      "success_rate": 0.03,
+      "per_task": {
+        "0": {
+          "completed": 50,
+          "successes": 6,
+          "planned": 50,
+          "success_rate": 0.12
+        },
+        "1": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "2": {
+          "completed": 50,
+          "successes": 1,
+          "planned": 50,
+          "success_rate": 0.02
+        },
+        "3": {
+          "completed": 50,
+          "successes": 1,
+          "planned": 50,
+          "success_rate": 0.02
+        },
+        "4": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "5": {
+          "completed": 50,
+          "successes": 4,
+          "planned": 50,
+          "success_rate": 0.08
+        },
+        "6": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        },
+        "7": {
+          "completed": 50,
+          "successes": 1,
+          "planned": 50,
+          "success_rate": 0.02
+        },
+        "8": {
+          "completed": 50,
+          "successes": 2,
+          "planned": 50,
+          "success_rate": 0.04
+        },
+        "9": {
+          "completed": 50,
+          "successes": 0,
+          "planned": 50,
+          "success_rate": 0.0
+        }
+      },
+      "updated": "2026-11-01T12:12:30.292903+08:00",
+      "episode_source": "benchmark",
+      "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+    },
+    {
+      "group": "B",
+      "scope": "strict",
+      "checkpoint": "outputs/runs/pi05-train500-ae-20261031T233628/train/B/checkpoints/step_003000",
+      "run_dir": "outputs/runs/pi05-train500-ae-20261031T233628/eval/B",
+      "state": "completed",
+      "planned": 500,
+      "completed": 500,
+      "successes": 142,
+      "failures": 358,
+      "errors": 0,
+      "success_rate": 0.284,
+      "per_task": {
+        "0": {
+          "completed": 50,
+          "successes": 18,
+          "planned": 50,
+          "success_rate": 0.36
+        },
+        "1": {
+          "completed": 50,
+          "successes": 11,
+          "planned": 50,
+          "success_rate": 0.22
+        },
+        "2": {
+          "completed": 50,
+          "successes": 19,
+          "planned": 50,
+          "success_rate": 0.38
+        },
+        "3": {
+          "completed": 50,
+          "successes": 22,
+          "planned": 50,
+          "success_rate": 0.44
+        },
+        "4": {
+          "completed": 50,
+          "successes": 2,
+          "planned": 50,
+          "success_rate": 0.04
+        },
+        "5": {
+          "completed": 50,
+          "successes": 9,
+          "planned": 50,
+          "success_rate": 0.18
+        },
+        "6": {
+          "completed": 50,
+          "successes": 12,
+          "planned": 50,
+          "success_rate": 0.24
+        },
+        "7": {
+          "completed": 50,
+          "successes": 31,
+          "planned": 50,
+          "success_rate": 0.62
+        },
+        "8": {
+          "completed": 50,
+          "successes": 6,
+          "planned": 50,
+          "success_rate": 0.12
+        },
+        "9": {
+          "completed": 50,
+          "successes": 12,
+          "planned": 50,
+          "success_rate": 0.24
+        }
+      },
+      "updated": "2026-11-01T11:32:26.083777+08:00",
+      "episode_source": "benchmark",
+      "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+    },
+    {
+      "group": "C",
+      "scope": "default",
+      "checkpoint": "outputs/runs/pi05-train500-ae-20261031T233628/train/C/checkpoints/step_003000",
+      "run_dir": "outputs/runs/pi05-train500-ae-20261031T233628/eval/C",
+      "state": "completed",
+      "planned": 500,
+      "completed": 500,
+      "successes": 474,
+      "failures": 26,
+      "errors": 0,
+      "success_rate": 0.948,
+      "per_task": {
+        "0": {
+          "completed": 50,
+          "successes": 48,
+          "planned": 50,
+          "success_rate": 0.96
+        },
+        "1": {
+          "completed": 50,
+          "successes": 48,
+          "planned": 50,
+          "success_rate": 0.96
+        },
+        "2": {
+          "completed": 50,
+          "successes": 50,
+          "planned": 50,
+          "success_rate": 1.0
+        },
+        "3": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "4": {
+          "completed": 50,
+          "successes": 47,
+          "planned": 50,
+          "success_rate": 0.94
+        },
+        "5": {
+          "completed": 50,
+          "successes": 36,
+          "planned": 50,
+          "success_rate": 0.72
+        },
+        "6": {
+          "completed": 50,
+          "successes": 50,
+          "planned": 50,
+          "success_rate": 1.0
+        },
+        "7": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "8": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "9": {
+          "completed": 50,
+          "successes": 48,
+          "planned": 50,
+          "success_rate": 0.96
+        }
+      },
+      "updated": "2026-11-01T10:22:03.926399+08:00",
+      "episode_source": "benchmark",
+      "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+    },
+    {
+      "group": "D",
+      "scope": "expert_full",
+      "checkpoint": "outputs/runs/pi05-train500-ae-20261031T233628/train/D/checkpoints/step_003000",
+      "run_dir": "outputs/runs/pi05-train500-ae-20261031T233628/eval/D",
+      "state": "completed",
+      "planned": 500,
+      "completed": 500,
+      "successes": 476,
+      "failures": 24,
+      "errors": 0,
+      "success_rate": 0.952,
+      "per_task": {
+        "0": {
+          "completed": 50,
+          "successes": 46,
+          "planned": 50,
+          "success_rate": 0.92
+        },
+        "1": {
+          "completed": 50,
+          "successes": 47,
+          "planned": 50,
+          "success_rate": 0.94
+        },
+        "2": {
+          "completed": 50,
+          "successes": 47,
+          "planned": 50,
+          "success_rate": 0.94
+        },
+        "3": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "4": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "5": {
+          "completed": 50,
+          "successes": 43,
+          "planned": 50,
+          "success_rate": 0.86
+        },
+        "6": {
+          "completed": 50,
+          "successes": 50,
+          "planned": 50,
+          "success_rate": 1.0
+        },
+        "7": {
+          "completed": 50,
+          "successes": 49,
+          "planned": 50,
+          "success_rate": 0.98
+        },
+        "8": {
+          "completed": 50,
+          "successes": 48,
+          "planned": 50,
+          "success_rate": 0.96
+        },
+        "9": {
+          "completed": 50,
+          "successes": 48,
+          "planned": 50,
+          "success_rate": 0.96
+        }
+      },
+      "updated": "2026-11-01T10:54:21.991012+08:00",
+      "episode_source": "benchmark",
+      "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+    }
+  ],
+  "episodes": [
+    {
+      "task_id": 0,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 0,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 1,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 2,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl from table center and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 3,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 4,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 5,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 6,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 7,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl on the stove and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 8,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl next to the plate and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 0,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 1,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 2,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 3,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 4,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 5,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 6,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 7,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 8,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 9,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 10,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 11,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 12,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 13,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 14,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 15,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 16,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 17,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 18,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 19,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 20,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 21,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 22,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 23,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 24,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 25,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 26,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": false
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 27,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 28,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 29,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 30,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 31,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 32,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 33,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 34,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 35,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 36,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 37,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 38,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 39,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 40,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 41,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 42,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 43,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": true,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 44,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 45,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 46,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 47,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 48,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    },
+    {
+      "task_id": 9,
+      "initial_state_id": 49,
+      "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "Base": false,
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": true
+    }
+  ]
+}

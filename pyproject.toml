@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi05-pipeline"
+version = "0.1.0"
+description = "A reproducible pi0.5 fine-tuning pipeline for Spatial-500"
+readme = "README.md"
+requires-python = ">=3.11"
+# Runtime versions are pinned in configs/requirements.lock.
+dependencies = []
+
+[project.scripts]
+pi05-data = "pi05.dataset:cli"
+pi05-model = "pi05.model:cli"
+pi05-train = "pi05.train:cli"
+pi05-evaluate = "pi05.evaluate:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pi05*"]
+namespaces = false

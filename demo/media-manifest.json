@@ -1,0 +1,254 @@
+[
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/videos/task00_init03_timeout.mp4",
+    "path": "demo/media/adaptation/Base.mp4",
+    "bytes": 333258,
+    "sha256": "5e9b2972ed9e60cb630e8c2b9d2b998723448976f10d53cf3032b5580b7a9932"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/starts/task00_init03.png",
+    "path": "demo/media/adaptation/Base-start.png",
+    "bytes": 116282,
+    "sha256": "467b7b40e0f5882da92dda2bb484c7a31f1845837f6931eece58e26bc299c6ce"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/traces/task00_init03.npz",
+    "path": "demo/media/adaptation/Base-trace.npz",
+    "bytes": 138474,
+    "sha256": "55fc45c75e9c62c75bb0c1b8005871374b153a98dc20cac11024afa568c681e7"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/videos/task00_init03_timeout.mp4",
+    "path": "demo/media/adaptation/A.mp4",
+    "bytes": 468121,
+    "sha256": "ec8dc4cde98447535e7b480825a29b7625b82a36f5a00ce4a413286ade273243"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/starts/task00_init03.png",
+    "path": "demo/media/adaptation/A-start.png",
+    "bytes": 116282,
+    "sha256": "467b7b40e0f5882da92dda2bb484c7a31f1845837f6931eece58e26bc299c6ce"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/traces/task00_init03.npz",
+    "path": "demo/media/adaptation/A-trace.npz",
+    "bytes": 143741,
+    "sha256": "50f2ab45f89e467c41a2d9cb78193ca82f03ca18bf8595ca0a9726bc6eafedb3"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/videos/task00_init03_timeout.mp4",
+    "path": "demo/media/adaptation/B.mp4",
+    "bytes": 421520,
+    "sha256": "b8bbaf26310a8e9cca28415df41780770348221b0f11c99204972f2a9784d70c"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/starts/task00_init03.png",
+    "path": "demo/media/adaptation/B-start.png",
+    "bytes": 116282,
+    "sha256": "467b7b40e0f5882da92dda2bb484c7a31f1845837f6931eece58e26bc299c6ce"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/traces/task00_init03.npz",
+    "path": "demo/media/adaptation/B-trace.npz",
+    "bytes": 135986,
+    "sha256": "6da19218586110dbd6cbbf37641e66a026fc98053d13292dda64bbdf8e198552"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/videos/task00_init03_success.mp4",
+    "path": "demo/media/adaptation/C.mp4",
+    "bytes": 235271,
+    "sha256": "51cc65b68035342d80cb9f682bec1308f9d336907cdfe73ca322c76f058f7312"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/starts/task00_init03.png",
+    "path": "demo/media/adaptation/C-start.png",
+    "bytes": 116282,
+    "sha256": "467b7b40e0f5882da92dda2bb484c7a31f1845837f6931eece58e26bc299c6ce"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/traces/task00_init03.npz",
+    "path": "demo/media/adaptation/C-trace.npz",
+    "bytes": 66468,
+    "sha256": "ff9e13aaad2330ab8a7763fbc7a99e6d3ee12f170acb692782989ee62776a752"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/videos/task00_init03_success.mp4",
+    "path": "demo/media/adaptation/D.mp4",
+    "bytes": 234059,
+    "sha256": "4f38bb7510e4871e9efb714f036a0d0a4fd1afcc8e8039cfce3403790f0ecb8d"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/starts/task00_init03.png",
+    "path": "demo/media/adaptation/D-start.png",
+    "bytes": 116282,
+    "sha256": "467b7b40e0f5882da92dda2bb484c7a31f1845837f6931eece58e26bc299c6ce"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/traces/task00_init03.npz",
+    "path": "demo/media/adaptation/D-trace.npz",
+    "bytes": 65499,
+    "sha256": "3e637e02bf8cf2d3d640b87883876d5b590ed18fe979d355cd34aac91a75135e"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/videos/task00_init18_timeout.mp4",
+    "path": "demo/media/c_only/B.mp4",
+    "bytes": 403296,
+    "sha256": "b5c33a1c91c079e4f2212d524a5fa17ea26fa797cff60d05ce75ff703065bf33"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/starts/task00_init18.png",
+    "path": "demo/media/c_only/B-start.png",
+    "bytes": 117788,
+    "sha256": "01dd81d5bdbce88006a1e224478442c448bd2abeb81129e538264338de4bb92e"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/traces/task00_init18.npz",
+    "path": "demo/media/c_only/B-trace.npz",
+    "bytes": 123627,
+    "sha256": "d9c0a7ce462e38abbf59da40eba82ad03b765aea60a43b2dc762e9045b9b0387"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/videos/task00_init18_success.mp4",
+    "path": "demo/media/c_only/C.mp4",
+    "bytes": 171504,
+    "sha256": "38ecbd333390a574e2a0188467be48b090c64fc7a3046def32c990d335400ca7"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/starts/task00_init18.png",
+    "path": "demo/media/c_only/C-start.png",
+    "bytes": 117788,
+    "sha256": "01dd81d5bdbce88006a1e224478442c448bd2abeb81129e538264338de4bb92e"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/traces/task00_init18.npz",
+    "path": "demo/media/c_only/C-trace.npz",
+    "bytes": 50685,
+    "sha256": "18e09dcb095b12765507df1c54de9d5410968722810360f6b7cc7057e1119528"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/videos/task00_init18_timeout.mp4",
+    "path": "demo/media/c_only/D.mp4",
+    "bytes": 333855,
+    "sha256": "eb35eaf553f0614ac0c8ef10887a4c0f43fcf2d41eeb24067b1f44bb2fb5e777"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/starts/task00_init18.png",
+    "path": "demo/media/c_only/D-start.png",
+    "bytes": 117788,
+    "sha256": "01dd81d5bdbce88006a1e224478442c448bd2abeb81129e538264338de4bb92e"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/traces/task00_init18.npz",
+    "path": "demo/media/c_only/D-trace.npz",
+    "bytes": 131510,
+    "sha256": "be3e9f598059b648f2c03e65ed184f04d85d9955c2fc94d4cdf461a558489e1a"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/videos/task05_init06_timeout.mp4",
+    "path": "demo/media/d_only/B.mp4",
+    "bytes": 451015,
+    "sha256": "a3874ed0ced817297d7a5d8cb717f76e99ce5840281a34812aaa79bc8504a26f"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/starts/task05_init06.png",
+    "path": "demo/media/d_only/B-start.png",
+    "bytes": 114337,
+    "sha256": "432298021a5d2ba450237be7d1f61f1c7f3341b8fe8b954474abf033ffdbc78c"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/traces/task05_init06.npz",
+    "path": "demo/media/d_only/B-trace.npz",
+    "bytes": 138607,
+    "sha256": "80e6547f3ca3e6997293a51aa1a9de433c3b22df5edd61cecd9db67cda289610"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/videos/task05_init06_timeout.mp4",
+    "path": "demo/media/d_only/C.mp4",
+    "bytes": 401079,
+    "sha256": "3cd26abf4a70a6751b85ac608145318f4cf344d509ec4505e38e0b9589a9c28b"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/starts/task05_init06.png",
+    "path": "demo/media/d_only/C-start.png",
+    "bytes": 114337,
+    "sha256": "432298021a5d2ba450237be7d1f61f1c7f3341b8fe8b954474abf033ffdbc78c"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/traces/task05_init06.npz",
+    "path": "demo/media/d_only/C-trace.npz",
+    "bytes": 136720,
+    "sha256": "ebb27c346a092112381fad3ff13a6d7edaa3785581ab78a845e7cc90d47ca193"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/videos/task05_init06_success.mp4",
+    "path": "demo/media/d_only/D.mp4",
+    "bytes": 185771,
+    "sha256": "8ea7da5892d253859876eacde3239dd891156e75ae0807ea85672b89bd082133"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/starts/task05_init06.png",
+    "path": "demo/media/d_only/D-start.png",
+    "bytes": 114337,
+    "sha256": "432298021a5d2ba450237be7d1f61f1c7f3341b8fe8b954474abf033ffdbc78c"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/traces/task05_init06.npz",
+    "path": "demo/media/d_only/D-trace.npz",
+    "bytes": 55729,
+    "sha256": "28618ac4f3470893c0eb928932da88048a57f3a34056bc7e0da337160328e8be"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/videos/task00_init02_timeout.mp4",
+    "path": "demo/media/both_fail/B.mp4",
+    "bytes": 374155,
+    "sha256": "f5548b14d877e651be53c2ce3300641ed3a436ddf48fabdc4b8cd7a814672826"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/starts/task00_init02.png",
+    "path": "demo/media/both_fail/B-start.png",
+    "bytes": 117802,
+    "sha256": "40712689c4e7529cd8cbce81353f800262238fa4aae292ff4032c5d7f6a64536"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/traces/task00_init02.npz",
+    "path": "demo/media/both_fail/B-trace.npz",
+    "bytes": 140521,
+    "sha256": "16776592d60ed8690e4490e1565b86574c2948a8a2d1ddd002678b532a9f255b"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/videos/task00_init02_timeout.mp4",
+    "path": "demo/media/both_fail/C.mp4",
+    "bytes": 379404,
+    "sha256": "654b93663ee5b34377bae5253c74db843eb8591bf951e20af8d685edeb7af455"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/starts/task00_init02.png",
+    "path": "demo/media/both_fail/C-start.png",
+    "bytes": 117802,
+    "sha256": "40712689c4e7529cd8cbce81353f800262238fa4aae292ff4032c5d7f6a64536"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/traces/task00_init02.npz",
+    "path": "demo/media/both_fail/C-trace.npz",
+    "bytes": 135706,
+    "sha256": "763f0a537daf0c970e4826c420d9a65f683401d8c09209b9d96d5c4b7d0d789e"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/videos/task00_init02_timeout.mp4",
+    "path": "demo/media/both_fail/D.mp4",
+    "bytes": 408172,
+    "sha256": "129b48ba4032d5bdaec171ad70ffa9a9a692ce6b0cb8741210e96a367e60c119"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/starts/task00_init02.png",
+    "path": "demo/media/both_fail/D-start.png",
+    "bytes": 117802,
+    "sha256": "40712689c4e7529cd8cbce81353f800262238fa4aae292ff4032c5d7f6a64536"
+  },
+  {
+    "source": "/data/djh-926/10-12-embodied-leRobot/my-\u03c0-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/traces/task00_init02.npz",
+    "path": "demo/media/both_fail/D-trace.npz",
+    "bytes": 129043,
+    "sha256": "18f230e219b4a0fecc5cbe9232aa3f98a8e3e5514646a1043a5d5a8bf7311376"
+  }
+]

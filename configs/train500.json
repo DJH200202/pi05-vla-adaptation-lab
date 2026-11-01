@@ -1,0 +1,20 @@
+{
+  "scope": "strict",
+  "sampling": "episode_shuffle",
+  "index": 20,
+  "batch_size": 2,
+  "accum_steps": 16,
+  "horizon": 10,
+  "lr": 5e-05,
+  "schedule": "cosine",
+  "warmup_steps": 100,
+  "total_steps": 3000,
+  "end_lr": 5e-06,
+  "seed": 7,
+  "save_every": 500,
+  "eval_every": 100,
+  "val_batches": 32,
+  "model_family": "pi05",
+  "data_root": "data/processed/libero-spatial-train500-v1",
+  "validation_mode": "none"
+}

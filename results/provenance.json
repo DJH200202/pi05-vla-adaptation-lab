@@ -1,0 +1,419 @@
+{
+  "origin_project": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25",
+  "run": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628",
+  "git_commit": "b33b8cc3f00593e37b258a3c21b1f7e807f88bda",
+  "git_status": " M AGENTS.md\n M README.md\n M docs/PIPELINE.md\n",
+  "export": "Read-only export, no experiment executed.",
+  "files": {
+    "src/pi05/model.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/model.py",
+      "sha256": "a319773003b274e2301781eaae1af758cc352b8ec8e34a9bc5a6c3a6f08edf7b",
+      "bytes": 15295
+    },
+    "src/pi05/train.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/train.py",
+      "sha256": "f97524c47677140df65265deae2ab7288ed450b221e2308d62315509f12d4b86",
+      "bytes": 34807
+    },
+    "src/pi05/checkpoints.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/checkpoints.py",
+      "sha256": "439d8190a04cca3f81680f46836b9972e9f68bb0330f3bf0a275a9b46fdd6b04",
+      "bytes": 7312
+    },
+    "src/pi05/evaluate.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/evaluate.py",
+      "sha256": "db52a3ef2eb041a06a7fd528d0e378cbe1b611413fa317306f263250f1160691",
+      "bytes": 48228
+    },
+    "src/pi05/dataset.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/dataset.py",
+      "sha256": "e24d8b276da3b8363530df93b3bb531561f2538ca4a588ebfdd50de383ce11f8",
+      "bytes": 17445
+    },
+    "src/pi05/__init__.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/src/pi05/__init__.py",
+      "sha256": "e185998938324b776e388077613efedbb70084a7fd7f95208f160e134de3bfb2",
+      "bytes": 170
+    },
+    "configs/train500.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/configs/train500.json",
+      "sha256": "22978b726a12f8d0ef6cc0aee0086a20d66a9d8da228676f952c91ad2473bd2a",
+      "bytes": 424
+    },
+    "configs/train.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/configs/train.json",
+      "sha256": "5132e6ed32d3c5c967f18487a121c7ef7e5f817e612a1790a5c6751efdb32131",
+      "bytes": 309
+    },
+    "configs/requirements.lock": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/configs/requirements.lock",
+      "sha256": "3c79cbbeeb201a2731c57ab6a4f2b04ddffccd3dbe5bf3381586df6f5f657198",
+      "bytes": 191718
+    },
+    "scripts/convert_spatial_500.py": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/scripts/convert_spatial_500.py",
+      "sha256": "46f2a29f244f3bb59ed9c557d3ce9352441e2c2e0a58206f5c3c3fb5ddb5ce3d",
+      "bytes": 19716
+    },
+    "scripts/env.sh": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/scripts/env.sh",
+      "sha256": "837702da5e6e501206b1aa129d36f0d02e502dff15977d955ecddde739ba777c",
+      "bytes": 2631
+    },
+    "scripts/setup_openpi.sh": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/scripts/setup_openpi.sh",
+      "sha256": "4940856a602775cdd60ee76d0629fdb1a61d24fd92fe4ce212ad42625366a663",
+      "bytes": 4903
+    },
+    "pyproject.toml": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/pyproject.toml",
+      "sha256": "cf16136072592e81ba3506229168a44747cf26e89d84838edd79e01bb0a502eb",
+      "bytes": 575
+    },
+    "results/train500/plan.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/plan.json",
+      "sha256": "a4ba4327b00b48697e48d6e3e9b6f0391389078467d3ff190ac80ae4d17ceac8",
+      "bytes": 23448
+    },
+    "results/train500/eval-plan.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval-plan.json",
+      "sha256": "5affe2b449bde3453f54bea06bd542c3c47ca200fe6edc042452919f85708667",
+      "bytes": 11551
+    },
+    "results/train500/eval-state.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval-state.json",
+      "sha256": "42f8125a42a60ba639f28624e97970e445364ca42288d270100438882eb9c804",
+      "bytes": 1491
+    },
+    "results/train500/summary.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/summary.csv",
+      "sha256": "b1290242426eb4ca8af403d7f9c21ea0974e0b0c2aa61941df8ac6071c2c07ef",
+      "bytes": 478
+    },
+    "results/train500/episodes.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/episodes.csv",
+      "sha256": "f6976a5046ff8d86a6efd87b15ecfa4497abcb31b2d457b31dbc011b7bbd6c3d",
+      "bytes": 52389
+    },
+    "results/train500/comparison.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/comparison.json",
+      "sha256": "5b25a79c448d8203aeeca5736dfc952b55f1b0798b44e4744869bda1cf8326af",
+      "bytes": 132110
+    },
+    "results/train500/train450-vs-train500.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train450-vs-train500.csv",
+      "sha256": "97de6c70ca0d2e4a53d29ab3e97f5ba149c789c42aa945f65f24825ecccb95b1",
+      "bytes": 255
+    },
+    "results/train500/train450-vs-train500.md": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train450-vs-train500.md",
+      "sha256": "de6b374c7b35a2ff6b1d46b4f49d4705ac79fd008d2b182b4ef584596bd6615a",
+      "bytes": 534
+    },
+    "results/train500/train/A/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/A/config.json",
+      "sha256": "a84d61d6ea70bcd92c45fdffaeafd7d2a5444f241218577475c4540346ff09ab",
+      "bytes": 1618
+    },
+    "results/train500/train/A/parameters.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/A/parameters.json",
+      "sha256": "65a26a59b07a425553ed930ba7030eed689d8d18ff1f5afbe8d6c8bfea1fba1b",
+      "bytes": 11597
+    },
+    "results/train500/train/A/metrics.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/A/metrics.jsonl",
+      "sha256": "8643c0b6d8eb0302a05cc9cd1cfda0b112208ec666feb6f34b13442fc4660e72",
+      "bytes": 3766210
+    },
+    "results/train500/train/A/training.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/A/training.csv",
+      "sha256": "c6104cb846f4389935e9e8a66714576fe5690c0db5fee0a042b0da73d15b2b8d",
+      "bytes": 896889
+    },
+    "results/train500/train/A/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/A/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/train/B/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/B/config.json",
+      "sha256": "42ce51701a452a7fcae3c88cc94ef81f4bcd8522278ba388341edfe604d5b9b4",
+      "bytes": 1188
+    },
+    "results/train500/train/B/parameters.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/B/parameters.json",
+      "sha256": "664220b7a6a383cb0bfaaf1a7b5957628eb349d47a0c87917febde6a7a8d4e7d",
+      "bytes": 13570
+    },
+    "results/train500/train/B/metrics.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/B/metrics.jsonl",
+      "sha256": "9935e53cb4f05a9b4c8edc5d098e72183be27fa23fbb48df47f46c5d50a20d97",
+      "bytes": 3814275
+    },
+    "results/train500/train/B/training.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/B/training.csv",
+      "sha256": "c0845386e4de08e51bb664dfa2c75fd9d675a2f29a03a026d8a86afefceb55ab",
+      "bytes": 945406
+    },
+    "results/train500/train/B/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/B/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/train/C/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/C/config.json",
+      "sha256": "507bbf7a8cd1015b86d4025b5dd04ed899e6208ce444d4bff3b7236673483dd8",
+      "bytes": 1189
+    },
+    "results/train500/train/C/parameters.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/C/parameters.json",
+      "sha256": "276a72fbdc31af5aeeb429cc83fdb42c6f8ecddac3b0f05d51b979a07bf3ee00",
+      "bytes": 13508
+    },
+    "results/train500/train/C/metrics.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/C/metrics.jsonl",
+      "sha256": "5ea532d6be59d24bc2d4655daa2815bd397191308caa1c535a7fed27a173adc9",
+      "bytes": 3907532
+    },
+    "results/train500/train/C/training.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/C/training.csv",
+      "sha256": "9a76aa2a5dca6115c8c94624eaf13bbcc3fb714ca6fdf2698723d283f90f3b4a",
+      "bytes": 1038630
+    },
+    "results/train500/train/C/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/C/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/train/D/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/D/config.json",
+      "sha256": "8ae34e44726a955c29e649b02c5e184ea2c058d79a4317edc82ad98e03a45633",
+      "bytes": 1618
+    },
+    "results/train500/train/D/parameters.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/D/parameters.json",
+      "sha256": "fe8c0399ec97f2faec9f9a259aa2873c7ac7a60c3d11e2473de4d9effdfcaa1e",
+      "bytes": 11493
+    },
+    "results/train500/train/D/metrics.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/D/metrics.jsonl",
+      "sha256": "d2086df2fccdcd7655d4986b65db6753dd4c00e3ccafae6e613e74a7a3e19cb5",
+      "bytes": 3906654
+    },
+    "results/train500/train/D/training.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/D/training.csv",
+      "sha256": "cd7110fcd76f5b964333ff1524f690adbc0efe86635257cb85aee9ca901c20da",
+      "bytes": 1036743
+    },
+    "results/train500/train/D/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/train/D/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/Base/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/config.json",
+      "sha256": "07a82b8e7dd2dd6e750ac296f14d0e3cee2513447943018604c722dc4ce3c3d4",
+      "bytes": 2208
+    },
+    "results/train500/eval/Base/summary.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/summary.json",
+      "sha256": "e7d617ad269cb2684ccbbb6de8ff17f0cc7d23ba5564b172eef2797dc7a7a8b1",
+      "bytes": 1436
+    },
+    "results/train500/eval/Base/eval_manifest.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/eval_manifest.json",
+      "sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+      "bytes": 364053
+    },
+    "results/train500/eval/Base/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/Base/episodes-03.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/episodes-03.jsonl",
+      "sha256": "63649f41006380b4872f9366dbb341460c3ddb37e6d79850da45dd388917b232",
+      "bytes": 147848
+    },
+    "results/train500/eval/Base/episodes-00.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/episodes-00.jsonl",
+      "sha256": "c9a9ddac0d8d2f61fa1a75ce1e0bad06fd1e62e99bdce89e7014aac5d7ef66e2",
+      "bytes": 150233
+    },
+    "results/train500/eval/Base/episodes-02.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/episodes-02.jsonl",
+      "sha256": "ca166fa6b8a11ffb12d09c44b515d78de82cbf3f349228ede24c250b682b73af",
+      "bytes": 150158
+    },
+    "results/train500/eval/Base/episodes-01.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/Base/episodes-01.jsonl",
+      "sha256": "b62b19d7a9c71198f55e81eded2df8b0fad75afcc8a3475779e95890b6156049",
+      "bytes": 147847
+    },
+    "results/train500/eval/A/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/config.json",
+      "sha256": "8d6a3a0ccc62360a6027465abec109f9eac736c2c980d6e8ade504c0eaf052e2",
+      "bytes": 2246
+    },
+    "results/train500/eval/A/summary.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/summary.json",
+      "sha256": "9ce7911a60de531fe8c4f7490ec9dcc4cc882834b62a963e235e70f7ae4ae507",
+      "bytes": 1444
+    },
+    "results/train500/eval/A/eval_manifest.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/eval_manifest.json",
+      "sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+      "bytes": 364053
+    },
+    "results/train500/eval/A/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/A/episodes-03.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/episodes-03.jsonl",
+      "sha256": "d91fc7f53b78fc6f4afe5aecf954092bd0634dae82df80cc13afc6160f85c5a0",
+      "bytes": 147963
+    },
+    "results/train500/eval/A/episodes-00.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/episodes-00.jsonl",
+      "sha256": "8f387fa444e57ca5d07c2d094ddee2af4a0e2046317cff878b5fd4b1c801adb3",
+      "bytes": 150200
+    },
+    "results/train500/eval/A/episodes-02.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/episodes-02.jsonl",
+      "sha256": "54ffc7a8a745c2b02a384a1a81eb28a30638eab4684337b1b262c5684f54fdef",
+      "bytes": 150156
+    },
+    "results/train500/eval/A/episodes-01.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/A/episodes-01.jsonl",
+      "sha256": "6ff333eed41a6c8f1c8f589bb014570ccebc92dd8f564ffc2907e68488d95c98",
+      "bytes": 148029
+    },
+    "results/train500/eval/B/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/config.json",
+      "sha256": "55f8446b25a30ceea3d4f706895e084fe0cb482197bf09c3bc4b039ba91e8d49",
+      "bytes": 2241
+    },
+    "results/train500/eval/B/summary.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/summary.json",
+      "sha256": "1da4157e4f954e5d6831a8d6db8bae583371a931ce42e50444a845da286c72fc",
+      "bytes": 1457
+    },
+    "results/train500/eval/B/eval_manifest.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/eval_manifest.json",
+      "sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+      "bytes": 364053
+    },
+    "results/train500/eval/B/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/B/episodes-03.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/episodes-03.jsonl",
+      "sha256": "3f79c33866e1f47dbb45e860909f781eb5e1ef5d8899a1d95c4999d4f326da45",
+      "bytes": 147838
+    },
+    "results/train500/eval/B/episodes-00.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/episodes-00.jsonl",
+      "sha256": "31fa258d2139ada810e2e74db7a6f4dd7c3c7aeb3cb5b8b3edca7a155f01c6dc",
+      "bytes": 150145
+    },
+    "results/train500/eval/B/episodes-02.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/episodes-02.jsonl",
+      "sha256": "780c3992125d6a838d1f86757c8bc0cf185ea5adeedd1b23906aa73d21f6e328",
+      "bytes": 150178
+    },
+    "results/train500/eval/B/episodes-01.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/B/episodes-01.jsonl",
+      "sha256": "39cab437ad962f11a6d47db712530a5866ba3a102785de30922987237e188d7b",
+      "bytes": 147881
+    },
+    "results/train500/eval/C/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/config.json",
+      "sha256": "de8ad87502259ee30f64c63e5d13d6700defaa1ed5a16485eebfb6bf5de6e733",
+      "bytes": 2242
+    },
+    "results/train500/eval/C/summary.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/summary.json",
+      "sha256": "7a0bbb53042fb321a97456edaf5de9fb8162cd0f4de52d2518aadc9cb9d3fb30",
+      "bytes": 1457
+    },
+    "results/train500/eval/C/eval_manifest.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/eval_manifest.json",
+      "sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+      "bytes": 364053
+    },
+    "results/train500/eval/C/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/C/episodes-03.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/episodes-03.jsonl",
+      "sha256": "47e694531021d2b92ca4b9f9201b4436601a96b53c252b13d5832c1d582063ba",
+      "bytes": 147838
+    },
+    "results/train500/eval/C/episodes-00.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/episodes-00.jsonl",
+      "sha256": "f67de9112f58b1daeff6780e14c555f1a0a20de26b3318ea73738de7e3f63973",
+      "bytes": 150110
+    },
+    "results/train500/eval/C/episodes-02.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/episodes-02.jsonl",
+      "sha256": "9971f8393a885f4594a5bb04cd98eab90994fa624ac85e3246ee775153a7f772",
+      "bytes": 150048
+    },
+    "results/train500/eval/C/episodes-01.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/C/episodes-01.jsonl",
+      "sha256": "b3d6838680ab1df898944fe961d8cdaea099226d234523a02922913b0289e678",
+      "bytes": 147837
+    },
+    "results/train500/eval/D/config.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/config.json",
+      "sha256": "40b4cf1c25fa43ff176b4a06cf1806f3099438103574e9c1c180b9d3adbe3c27",
+      "bytes": 2246
+    },
+    "results/train500/eval/D/summary.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/summary.json",
+      "sha256": "1eda3d3c4654abfe28ab1633f5c4e3c92ae3281b1a595aa919b758f0443bf0f6",
+      "bytes": 1458
+    },
+    "results/train500/eval/D/eval_manifest.json": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/eval_manifest.json",
+      "sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5",
+      "bytes": 364053
+    },
+    "results/train500/eval/D/exit-code.txt": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/exit-code.txt",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "results/train500/eval/D/episodes-03.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/episodes-03.jsonl",
+      "sha256": "af5ad60ea2f46f1f677bc47beae0f2b5dbd757039d40dce553869f56df436205",
+      "bytes": 147880
+    },
+    "results/train500/eval/D/episodes-00.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/episodes-00.jsonl",
+      "sha256": "8e71013ed4b948dd7f36d76c11c24ac12bfe1d1b8b87f6c81f5b233bd4fa3a0c",
+      "bytes": 150087
+    },
+    "results/train500/eval/D/episodes-02.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/episodes-02.jsonl",
+      "sha256": "e7506813539afd48ddf11eef9d5dff5d32cebfb0635d41be64efcb23e0b1edd6",
+      "bytes": 150079
+    },
+    "results/train500/eval/D/episodes-01.jsonl": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/pi05-train500-ae-20261031T233628/eval/D/episodes-01.jsonl",
+      "sha256": "987c956d82216de531d22aed8bd41446e9c0bc3b066b98db6676a423fea4118e",
+      "bytes": 147897
+    },
+    "results/train450/summary.csv": {
+      "source": "/data/djh-926/10-12-embodied-leRobot/my-π-0.5-10-25/outputs/runs/new-evaluate/summary.csv",
+      "sha256": "551f279d2557f5569303b361e0f094739befa50abc59673d40ab82c601e65b30",
+      "bytes": 532
+    }
+  }
+}

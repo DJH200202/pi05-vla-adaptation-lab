@@ -1,0 +1,74 @@
+{
+  "state": "completed",
+  "planned": 500,
+  "completed": 500,
+  "successes": 0,
+  "failures": 500,
+  "errors": 0,
+  "success_rate": 0.0,
+  "per_task": {
+    "0": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "1": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "2": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "3": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "4": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "5": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "6": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "7": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "8": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    },
+    "9": {
+      "completed": 50,
+      "successes": 0,
+      "planned": 50,
+      "success_rate": 0.0
+    }
+  },
+  "updated": "2026-11-01T12:52:34.169283+08:00",
+  "episode_source": "benchmark",
+  "eval_manifest_sha256": "f37eedadc58fdb11ca419c6dc4051ac1921c8b7d0584a4232f2ebd72c6084dc5"
+}

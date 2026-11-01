@@ -1,0 +1,7 @@
+group,scope,successes,episodes,success_rate,task_00_successes,task_01_successes,task_02_successes,task_03_successes,task_04_successes,task_05_successes,task_06_successes,task_07_successes,task_08_successes,task_09_successes
+Base,base,0,500,0.0,0,0,0,0,0,0,0,0,0,0
+A,action_lora,20,500,0.04,3,1,6,3,0,3,0,4,0,0
+B,strict,179,500,0.358,15,12,33,26,9,15,18,29,10,12
+C,default,469,500,0.938,48,48,49,48,40,47,49,50,46,44
+D,expert_full,472,500,0.944,49,48,50,47,44,45,50,49,46,44
+E,full,457,500,0.914,45,45,49,49,36,44,47,50,47,45

@@ -1,0 +1,6 @@
+group,old_successes,new_successes,episodes,old_success_rate,new_success_rate,difference_percentage_points
+Base,0,0,500,0.0,0.0,0.0
+A,20,15,500,0.04,0.03,-1.0
+B,179,142,500,0.358,0.284,-7.4
+C,469,474,500,0.938,0.948,1.0
+D,472,476,500,0.944,0.952,0.8

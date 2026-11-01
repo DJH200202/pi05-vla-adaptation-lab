@@ -1,0 +1,58 @@
+{
+  "state": "completed",
+  "driver_pid": 4131612,
+  "groups": {
+    "C": {
+      "state": "completed",
+      "pid": 4131616,
+      "started": "2026-11-01T09:53:29.732214+08:00",
+      "exit_code": 0,
+      "ended": "2026-11-01T10:22:04.002095+08:00",
+      "successes": 474,
+      "success_rate": 0.948
+    },
+    "D": {
+      "state": "completed",
+      "pid": 4161507,
+      "started": "2026-11-01T10:22:04.106545+08:00",
+      "exit_code": 0,
+      "ended": "2026-11-01T10:54:22.082673+08:00",
+      "successes": 476,
+      "success_rate": 0.952
+    },
+    "B": {
+      "state": "completed",
+      "pid": 4191909,
+      "started": "2026-11-01T10:54:22.234042+08:00",
+      "exit_code": 0,
+      "ended": "2026-11-01T11:32:26.164651+08:00",
+      "successes": 142,
+      "success_rate": 0.284
+    },
+    "A": {
+      "state": "completed",
+      "pid": 30449,
+      "started": "2026-11-01T11:32:26.268360+08:00",
+      "exit_code": 0,
+      "ended": "2026-11-01T12:12:30.353431+08:00",
+      "successes": 15,
+      "success_rate": 0.03
+    },
+    "Base": {
+      "state": "completed",
+      "pid": 62068,
+      "started": "2026-11-01T12:12:30.483068+08:00",
+      "exit_code": 0,
+      "ended": "2026-11-01T12:52:34.246038+08:00",
+      "successes": 0,
+      "success_rate": 0.0
+    }
+  },
+  "deferred": [
+    "E"
+  ],
+  "active_group": null,
+  "started": "2026-11-01T09:53:29.624866+08:00",
+  "updated": "2026-11-01T12:52:34.748635+08:00",
+  "ended": "2026-11-01T12:52:34.748575+08:00"
+}

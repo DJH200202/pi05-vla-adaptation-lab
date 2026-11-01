@@ -1,0 +1,3 @@
+# Only needed to regenerate PNG/SVG plots; viewing the demo needs no Python packages.
+matplotlib==3.11.2
+numpy==2.5.4

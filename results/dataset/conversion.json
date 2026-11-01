@@ -1,0 +1,135 @@
+{
+  "format": "LeRobot",
+  "codebase_version": "v2.1",
+  "repo_id": "local/libero-spatial-500-v1",
+  "created_at_utc": "2026-10-31T15:34:58.576729+00:00",
+  "source": {
+    "source_repo": "yifengzhu-hf/LIBERO-datasets",
+    "revision": "f13aa24a3da8c43c7225569f28c562979fa0e35a",
+    "source_index_sha256": "e39cec5fe7a231bf3657072f3a601b935bb9c5ab85ce250a7918a473ceb03156",
+    "files": [
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "ff6f26121653c77280eb40a38773a74141c11a8509f3466058cb56dd2cc60ead",
+        "episodes": 50,
+        "frames": 5068,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "75ede0cf5fbfc925093671b55032ad80f1b1f1cf35442ec6c663460d37d3e0b3",
+        "episodes": 50,
+        "frames": 5882,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "7ff1ee60447875c152d8c7819f499d23dbc0eb4d4bf045225d5d87a2cdad99bd",
+        "episodes": 50,
+        "frames": 7479,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "9d0b5435b313a8c0d7336b429b5f0f578be6f2a9f5f8a6dd67459ef388f3c74c",
+        "episodes": 50,
+        "frames": 6312,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "3961cb7126eaca47d0f5be29eb297bb62e7591e3c86172c9587c0bf670112f84",
+        "episodes": 50,
+        "frames": 5963,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "bf1090dd4826eacb49eb052f17d04798e2a1eb2f74f8d024bc3b9c5d234c25f9",
+        "episodes": 50,
+        "frames": 6707,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "0c053db7317e584632549bddb963bee8a237661b4bd29f0581a245f715e8eb72",
+        "episodes": 50,
+        "frames": 5052,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "d9b2da7399a88bea39024c8ef97713a20734e9b765e14b3399e2755890c828b7",
+        "episodes": 50,
+        "frames": 5796,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "1fcb3990cf9fd6185f56531cc9f6dec0a77a59bfa0c7f39dff95b7e43cf6aeaa",
+        "episodes": 50,
+        "frames": 7111,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      },
+      {
+        "path": "libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5",
+        "sha256": "4d503d447028f437211880bea4ee1a7f6732113ea8560181fcca163251864794",
+        "episodes": 50,
+        "frames": 6880,
+        "control_freq": 20,
+        "image_convention": "opengl"
+      }
+    ]
+  },
+  "converter_sha256": "46f2a29f244f3bb59ed9c557d3ce9352441e2c2e0a58206f5c3c3fb5ddb5ce3d",
+  "episodes": 500,
+  "tasks": 10,
+  "frames": 61750,
+  "source_frames": 62250,
+  "fps": 20,
+  "train_episodes": 500,
+  "validation_episodes": 0,
+  "train_frames": 61750,
+  "validation_frames": 0,
+  "split_seed": null,
+  "split_rule": "all 500 episodes train; preserve original episode IDs; no held-out validation",
+  "task_index_rule": "lexicographic HDF5 filename; map evaluation tasks by text",
+  "processing": {
+    "episode_filter": "none",
+    "frame_filter": "omit final observation of each episode because no next action is stored",
+    "resampling": "none",
+    "alignment": "source obs[t] is post action[t]; output pairs obs[t] with source action[t+1]",
+    "alignment_source": "https://github.com/Lifelong-Robot-Learning/LIBERO/blob/f78abd68ee283de9f9be3c8f7e2a9ad60246e95c/scripts/create_dataset.py",
+    "images": "source uint8 128x128 RGB; rotate180 then Pillow BILINEAR resize to 256x256; lossless embedded PNG",
+    "state": "concat ee_pos[3], ee_ori axis-angle[3], gripper_states[2]; float32",
+    "actions": "original 7D delta OSC actions shifted one frame forward, cast float32; no value scaling or differencing",
+    "normalization": "population mean/std and exact q01/q99 over stored per-frame vectors from train episodes only"
+  },
+  "norm_stats_path": "assets/libero-spatial-500-v1/norm_stats.json",
+  "norm_stats_sha256": "a9e4cd5f73a4f95abaff119e86687058f36017238dad2b7cdd16f99efa29eb37",
+  "validation": {
+    "all_parquet_sha256": true,
+    "all_vector_indices_finite": true,
+    "original_conversion_checks": {
+      "source_files_sha256": true,
+      "all_frames_state_action_roundtrip": true,
+      "all_frames_both_cameras_pixel_roundtrip": true,
+      "all_indices_timestamps": true,
+      "train_validation_overlap": 0
+    },
+    "heldout_validation": false
+  },
+  "wall_seconds": 70.34609216079116,
+  "protocol": "train500-no-heldout",
+  "reused_processed_root": "data/processed/libero-spatial-500-v1",
+  "reused_conversion_sha256": "3a9d08c190f1d02e94166d6e61166347d462f0266e6c5cd46dd38176d277f6b1"
+}

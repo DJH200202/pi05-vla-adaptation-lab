@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.cache/
+.venv/
+.venv-demo/
+envs/
+tools/
+external/
+data/
+checkpoints/
+outputs/
+.local-config/
+*.log

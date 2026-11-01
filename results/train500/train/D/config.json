@@ -1,0 +1,62 @@
+{
+  "scope": "expert_full",
+  "sampling": "episode_shuffle",
+  "index": 20,
+  "batch_size": 2,
+  "accum_steps": 16,
+  "horizon": 10,
+  "lr": 5e-05,
+  "schedule": "cosine",
+  "warmup_steps": 100,
+  "total_steps": 3000,
+  "end_lr": 5e-06,
+  "seed": 7,
+  "save_every": 500,
+  "eval_every": 100,
+  "val_batches": 32,
+  "model_family": "pi05",
+  "data_root": "data/processed/libero-spatial-train500-v1",
+  "validation_mode": "none",
+  "data_signature": "e3581a7d4464ef7508ccd754e269a58779fe018af81fe8a4956f9234ebb51779",
+  "validation_signature": "824d9b201ba37c209ee3fb8f193cac58a2638ded87a28b274b668b98c538986f",
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "optimizer": {
+    "b1": 0.9,
+    "b2": 0.95,
+    "eps": 1e-08,
+    "weight_decay": 1e-10,
+    "clip_gradient_norm": 1.0
+  },
+  "model_spec": {
+    "pi05": true,
+    "action_dim": 32,
+    "action_horizon": 10,
+    "max_token_len": 200,
+    "discrete_state_input": false,
+    "continuous_state_input": false,
+    "dtype": "bfloat16"
+  },
+  "normalization": "quantile",
+  "adaptation": {
+    "paligemma_variant": "gemma_2b_lora",
+    "action_expert_variant": "gemma_300m",
+    "lora": {
+      "llm": {
+        "attn": {
+          "rank": 16,
+          "alpha": 16.0
+        },
+        "ffn": {
+          "rank": 16,
+          "alpha": 16.0
+        }
+      },
+      "action_expert": {}
+    },
+    "trainable_dtype": "float32",
+    "frozen_dtype": "bfloat16",
+    "compute_dtype": "bfloat16"
+  },
+  "base_checkpoint": "checkpoints/base/openpi-assets/checkpoints/pi05_base",
+  "base_checkpoint_source": "gs://openpi-assets/checkpoints/pi05_base"
+}
