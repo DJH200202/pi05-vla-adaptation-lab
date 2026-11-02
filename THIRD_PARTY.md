@@ -1,6 +1,6 @@
 # Upstream code, models and data
 
-This private portfolio is built on Physical Intelligence OpenPI and LIBERO. It does not claim authorship of their model architecture, pretrained weights, dataset, or simulator.
+This public portfolio is built on Physical Intelligence OpenPI and LIBERO. It does not claim authorship of their model architecture, pretrained weights, dataset, or simulator.
 
 | Component | Reference |
 |---|---|

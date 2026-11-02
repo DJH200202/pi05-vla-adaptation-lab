@@ -2,7 +2,7 @@
 
 ## 1. 零 GPU 查看已有结果
 
-克隆私有仓库需要账号权限。直接双击 `demo/index.html`，或运行：
+仓库现已公开，无需邀请即可克隆。直接双击 `demo/index.html`，或运行：
 
 ```bash
 python3 -m http.server 8768 --bind 127.0.0.1

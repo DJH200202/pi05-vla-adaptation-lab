@@ -6,9 +6,9 @@
 
 **500 条训练示教 · 61,750 帧 · 3,000 次更新 / 方案 · 官方 10 任务 × 50 初态 / 模型**
 
-[交互 Demo](demo/index.html) · [60 秒概览视频](demo/overview.mp4) · [学习与面试手册](demo/study.html) · [结果分析](docs/results.md) · [复现说明](docs/reproduction.md) · [数据与模型机制](docs/methodology.md)
+[项目主页与在线 Demo](https://djh200202.github.io/pi05-vla-demo/) · [60 秒概览视频](demo/overview.mp4) · [学习与面试手册](demo/study.html) · [结果分析](docs/results.md) · [复现说明](docs/reproduction.md) · [数据与模型机制](docs/methodology.md)
 
-> 仓库保持 private。GitHub 文件预览不会执行 HTML；克隆后双击 `demo/index.html`，或按下面命令启动本地预览。未部署公网服务。
+> 本仓库公开代码与实验记录。招聘浏览入口为上方项目主页，可直接观看录像与交互图表；本地 Demo 仍可离线打开。
 
 ![闭环评估结果](demo/assets/charts/success-rates.png)
 
@@ -52,7 +52,7 @@ E 整模型微调在本轮暂缓，没有 train500 结果。C 不是整模型全
 ## 查看 Demo，不需要 GPU
 
 ```bash
-git clone git@github.com:DJH200202/pi05-vla-adaptation-lab.git
+git clone https://github.com/DJH200202/pi05-vla-adaptation-lab.git
 cd pi05-vla-adaptation-lab
 python3 -m http.server 8768 --bind 127.0.0.1
 # 浏览器打开 http://127.0.0.1:8768/demo/
